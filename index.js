@@ -1,8 +1,3 @@
-let employeeArray = [
-    ['moe', 'sizlak', 'barkeep', 2],
-    ['bartholomew', 'simpson', 'scamp', 3]
-]
-
 const createEmployeeRecord = (testEmployee) =>  {
     const recordObject = {
         firstName: testEmployee[0],
@@ -28,18 +23,18 @@ const createEmployeeRecords = (dataEmployees) => {
 const createTimeInEvent = (employeeRecordObj, dateStamp) => {
     const timeInObj = {
         type: `TimeIn`,
-        hour: parseInt(dateStamp.slice(11)), // => starts new array at 11 index
-        date: dateStamp.slice(0, 10) // => starts new array with just date
+        hour: parseInt(dateStamp.slice(11)),
+        date: dateStamp.slice(0, 10) 
     }
-    employeeRecordObj.timeInEvents.push(timeInObj) // => adds to the timeInEvents array initialized above
+    employeeRecordObj.timeInEvents.push(timeInObj) 
     return employeeRecordObj
 }
 
 const createTimeOutEvent = (employeeRecordObj, dateStamp) => {
     const timeOutObj = {
         type: `TimeOut`,
-        hour: parseInt(dateStamp.slice(11)), // => starts new array at 11 index
-        date: dateStamp.slice(0, 10) // => starts new array with just date
+        hour: parseInt(dateStamp.slice(11)), 
+        date: dateStamp.slice(0, 10) 
     }
     employeeRecordObj.timeOutEvents.push(timeOutObj)
     return employeeRecordObj
