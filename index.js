@@ -72,13 +72,13 @@ const allWagesFor = (employeeRecordObj) => {
     return total
 }
 
-const findEmployeeByFirstName = (ArrOfEmpObject, firstName) => {
-    return ArrOfEmpObject.find(employee => firstName === employee.firstName)
+const findEmployeeByFirstName = (ArrOfEmployeeObject, firstName) => {
+    return ArrOfEmployeeObject.find(employee => firstName === employee.firstName)
 }
 
-const calculatePayroll = (ArrOfEmpObject) => {
+const calculatePayroll = (ArrOfEmployeeObject) => {
     let totalWages = 0
-    ArrOfEmpObject.forEach(element => {
+    ArrOfEmployeeObject.forEach(element => {
         totalWages = totalWages + allWagesFor(element)
     })
     return totalWages
