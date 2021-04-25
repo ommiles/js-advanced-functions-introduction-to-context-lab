@@ -1,9 +1,9 @@
-const createEmployeeRecord = (testEmployee) =>  {
+const createEmployeeRecord = (employee) =>  {
     const recordObject = {
-        firstName: testEmployee[0],
-        familyName: testEmployee[1],
-        title: testEmployee[2],
-        payPerHour: testEmployee[3],
+        firstName: employee[0],
+        familyName: employee[1],
+        title: employee[2],
+        payPerHour: employee[3],
         timeInEvents: [],
         timeOutEvents: []
     }
