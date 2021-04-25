@@ -72,7 +72,7 @@ const findEmployeeByFirstName = (ArrOfEmployeeObject, firstName) => {
 const calculatePayroll = (ArrOfEmployeeObject) => {
     let totalWages = 0
     ArrOfEmployeeObject.forEach(element => {
-        totalWages = totalWages + allWagesFor(element)
+        totalWages += allWagesFor(element)
     })
     return totalWages
 }
