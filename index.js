@@ -10,8 +10,6 @@ const createEmployeeRecord = (testEmployee) =>  {
     return recordObject 
 }
 
-createEmployeeRecord(['Gray', 'Worm', 'Security', 1])
-
 const createEmployeeRecords = (dataEmployees) => {
     const newRecordsList = []
     dataEmployees.forEach(element => {
