@@ -22,7 +22,7 @@ const createEmployeeRecords = (dataEmployees) => {
 
 const createTimeInEvent = (employeeRecordObj, dateStamp) => {
     const timeInObj = {
-        type: `TimeIn`,
+        type: 'TimeIn',
         hour: parseInt(dateStamp.slice(11)),
         date: dateStamp.slice(0, 10) 
     }
@@ -32,7 +32,7 @@ const createTimeInEvent = (employeeRecordObj, dateStamp) => {
 
 const createTimeOutEvent = (employeeRecordObj, dateStamp) => {
     const timeOutObj = {
-        type: `TimeOut`,
+        type: 'TimeOut',
         hour: parseInt(dateStamp.slice(11)), 
         date: dateStamp.slice(0, 10) 
     }
